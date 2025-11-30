@@ -8,6 +8,7 @@ public class MasterReplicaDbApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MasterReplicaDbApplication.class, args);
+
 	}
 
 }

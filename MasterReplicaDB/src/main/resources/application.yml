@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    master:
+      url: jdbc:mysql://localhost:3306/master_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      username: root
+      password: Siddhant@9534
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    replica:
+      url: jdbc:mysql://localhost:3307/replica_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      username: root
+      password: Siddhant@9534
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8080
+logging:
+  level:
+    com.demo: DEBUG
+    org.springframework.jdbc: DEBUG
