@@ -42,10 +42,6 @@ public class UserService {
 
             // Insert one by one
             for (Map<String, Object> row : data) {
-//                replicaJdbc.update(
-//                        "INSERT INTO users (name, email) VALUES (?, ?, ?)",
-//                        row.get("name"), row.get("email")
-//                );
 
                 replicaJdbc.update("INSERT INTO users (name, email) VALUES (?, ?)",   row.get("name"), row.get("email") );
             }
